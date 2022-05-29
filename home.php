@@ -61,9 +61,8 @@
         </nav> 
 
         <section class='races'>
-            <div class='next_race'></div> 
-            <div class='last_race'></div> 
-            
+        <div class='last_race'></div> 
+            <div class='next_race'></div>    
         </section>
         
         <main>

@@ -35,11 +35,12 @@ function last_race(){
     if ($err) 
 	echo "cURL Error #:" . $err;  
 
+$race_id=$json['response'][0]['id'];
 
 $curl_driver = curl_init();
 
 curl_setopt_array($curl_driver, [
-	CURLOPT_URL => "https://api-formula-1.p.rapidapi.com/rankings/races?race=1513",
+	CURLOPT_URL => "https://api-formula-1.p.rapidapi.com/rankings/races?race=$race_id",
 	CURLOPT_RETURNTRANSFER => true,
 	CURLOPT_FOLLOWLOCATION => true,
 	CURLOPT_ENCODING => "",

@@ -37,8 +37,7 @@ function next_race(){
 
             $next[0] = array(
                             'name'=>$json['response'][0]['competition']['name'],
-                            'city'=>$json['response'][0]['competition']['location']['city'],
-                            'laps' => $json['response'][0]['laps']['total'],);
+                            'city'=>$json['response'][0]['competition']['location']['city']);
     
     curl_close($curl);            
     # Ritorno l'array
