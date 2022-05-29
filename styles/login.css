@@ -1,0 +1,130 @@
+body{
+    min-height: 100vh;
+    margin:0;
+    height:100%;
+    background-image: url("../images/background_dark.png");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.error {
+    padding: 4px 10px;
+    background: #ffe2e2;
+    border-radius: 7px;
+    color: #fa1c2c;
+    margin: 5px;
+    font-size: 12px;
+    display: inline-block;
+}
+h1, h2{
+    margin-bottom: 0 ;
+}
+
+section {
+    color: #1b2d45;
+    border:1px black solid;
+    padding-bottom: 20px;
+    max-height: auto;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #d13952;
+    border-radius: 20px;
+    box-shadow: 0 4px 4px 0 #00ebc7,0 6px 20px 0 #c3f0ca;
+}
+
+label {
+    font-size: 1rem;
+
+}
+form {
+    max-width: 387px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+form span {
+    opacity: 0;
+    font-size: 11px;
+    transition: opacity 0.3s ease;
+    cursor:default;
+}
+
+.errorj span{
+    opacity: 1;
+    font-size: 11px;
+    color: greenyellow;
+}
+
+.errorj input {
+    border-color: greenyellow;
+}
+.allow{
+    display:flex; 
+    flex-wrap: wrap;
+    margin-top: 10px;  
+}
+.remember{
+    display:flex; 
+    flex-wrap: wrap;
+    margin-top: 10px;  
+}
+
+input[type=checkbox]{  
+    width: 16px;
+}
+form div {
+    text-align: left;
+}
+
+input[type=text], input[type=password] {
+    background: ghostwhite;
+    padding: 8px;
+    border: 2px solid ghostwhite;
+    color: black;
+    border-radius: 4px;
+}
+
+input[type=submit] {
+    margin-top: 10px;
+    background: #c3f0ca;
+    border: 0;
+    border-radius: 4px;
+    padding: 8px;
+    color: #00214d;
+    font-weight: 700;
+    cursor: pointer;
+    text-align: center;
+    font-size: 14px;
+}
+
+input[type=submit]:hover {
+    background: #00ebc7;
+}
+a{
+    color:#c3f0ca;
+}
+a:hover{
+    color:#00ebc7;
+}
+
+section input {
+    width: 100%;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+
+
+
+@media (max-width: 600px) {
+    section { 
+        width: 90%;
+        height:auto;
+}
+ section input{
+    width: 90%;
+}
+}

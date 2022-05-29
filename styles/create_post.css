@@ -1,0 +1,166 @@
+body{
+    font-family: 'Oxigen', sans-serif;
+    font-size: 16px;
+    min-height: 100vh;
+    margin:0;
+    height:100%;
+    background-image: url("../images/background_dark.png");
+}
+.hidden{
+    display: none;
+}
+nav{
+    min-height: auto;
+    height: 75px;
+    background-color:#00ebc7;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.home img{
+    height: 3rem;
+    width: auto;
+}
+.tutto{
+    font-weight: bold;
+    font-size: 2.5rem;
+    color: black;
+}
+.f1{
+    font-weight: bold;
+    font-size: 3rem;
+    color: red;
+}
+
+a{
+    text-decoration: none;
+}
+.nav_content{
+    color:black;
+    font-size: 1.2rem;
+}
+.log{
+    color:black;
+    font-size: 1.2rem;
+}
+.out{
+    color:red;
+    font-size: 1.2rem;
+}
+
+.crea_post{
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    margin-top: 150px;
+    
+}
+.crea_post div{
+    background-color:#fffffe;
+    border: 1px solid #00ebc7;
+    border-radius: 15px;
+    width: 33.3%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center ;
+}
+ 
+.invia_post {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center ;
+}
+
+textarea {
+    resize: none;
+    height: 40px;
+    padding: 8px;
+    border-radius: 4px;
+    background: black;
+    color:#00ebc7;
+    transition: border ease 0.2s, opacity ease 0.2s;
+    border: 1px solid #00ebc7;
+    font-size: 15px;
+    outline-width: 0 !important;
+    width: 300px;
+    max-width: 80%;
+    margin-bottom: 15px;
+}
+
+input[type="submit"]:hover{
+    background-color: #00ebc7;
+    cursor: pointer;
+}
+input[type="submit"]{
+background-color: #c3f0ca;
+}
+
+.hidden{
+    display: none;
+}
+
+.errore{
+    color:red;
+}
+
+footer{
+    bottom:0;
+    width: 100%;
+    position: absolute;
+    height: 100px;
+    background-color: #690d18;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer div{
+    text-align: center;
+}
+
+@media (max-width: 900px){
+    .crea_post div{
+        width: 50%;
+    }
+}
+@media (max-width: 600px){
+    .nav_content span , .logout span{
+        display: none;
+    }
+    .nuovo_post{
+        background-image: url("../images/nuovo_post.png");
+        height: 30px;
+        width: 30px;
+        background-position: center;
+        background-size: contain;
+    }
+    .classifiche_image{
+        background-image: url("../images/classifiche.png");
+        height: 30px;
+        width: 30px;
+        background-position: center;
+        background-size: contain;
+    }
+    .profile_image{
+        background-image: url("../images/profile.png");
+        height: 30px;
+        width: 30px;
+        background-position: center;
+        background-size: contain;
+    }
+    .logout_image{
+        background-image: url("../images/logout.png");
+        height: 30px;
+        width: 30px;
+        background-position: center;
+        background-size: contain;
+    }
+
+    .crea_post div{
+        width: 80%;
+    }
+}
