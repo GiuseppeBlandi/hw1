@@ -189,7 +189,7 @@ function fetchNextRaceJson(json){
     const results=json[0];
     console.log(results);
     const container=document.querySelector(".next_race");
-    container.textContent="Prossima gara: \""+results.name+"\" circuito di "+results.city+" n° giri: "+results.laps;
+    container.textContent="Prossima gara: \""+results.name+"\" circuito di "+results.city;
 }
 
 nextRace();
