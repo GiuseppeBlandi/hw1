@@ -77,12 +77,12 @@ a{
     display: flex;
     justify-content: space-between;
 }
-.next_race{
+.last_race{
     margin-left: 10px;
     padding-right: 10px;
     border-right: #f60d28 1px solid;
 }
-.last_race{
+.next_race{
     margin-right: 10px;
     padding-left: 10px;
     border-left: #f60d28 1px solid;
